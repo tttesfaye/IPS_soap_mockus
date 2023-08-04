@@ -1,0 +1,20 @@
+CREATE TABLE `ips_transaction_info` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `transaction_id` varchar(45) DEFAULT NULL,
+  `MsgDefIdr` varchar(45) DEFAULT NULL,
+  `BizMsgIdr` varchar(45) DEFAULT NULL,
+  `OrgnlTxId` varchar(45) DEFAULT NULL,
+  `src_fincial_institution` varchar(45) DEFAULT NULL,
+  `src_issr` varchar(45) DEFAULT NULL,
+  `src_account` varchar(45) DEFAULT NULL,
+  `dst_financial_institution` varchar(45) DEFAULT NULL,
+  `dst_account` varchar(45) DEFAULT NULL,
+  `PmtTpInf_LclInstrm` varchar(45) DEFAULT NULL,
+  `SttlmInf_SttlmMtd` varchar(45) DEFAULT NULL,
+  `lmInf_ClrSys` varchar(45) DEFAULT NULL,
+  `IntrBkSttlmAmt` varchar(45) DEFAULT NULL,
+  `InstdAmt` varchar(45) DEFAULT NULL,
+  `TxSts` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
